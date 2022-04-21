@@ -57,6 +57,9 @@
             <layout class="QHBoxLayout" name="horizontalLayout_2">
              <item>
               <widget class="QSpinBox" name="B_d">
+               <property name="suffix">
+                <string>°</string>
+               </property>
                <property name="minimum">
                 <number>-90</number>
                </property>
@@ -67,6 +70,9 @@
              </item>
              <item>
               <widget class="QSpinBox" name="B_m">
+               <property name="suffix">
+                <string>′</string>
+               </property>
                <property name="maximum">
                 <number>59</number>
                </property>
@@ -74,6 +80,12 @@
              </item>
              <item>
               <widget class="QDoubleSpinBox" name="B_s">
+               <property name="prefix">
+                <string/>
+               </property>
+               <property name="suffix">
+                <string>″</string>
+               </property>
                <property name="decimals">
                 <number>4</number>
                </property>
@@ -113,6 +125,9 @@
             <layout class="QHBoxLayout" name="horizontalLayout_3">
              <item>
               <widget class="QSpinBox" name="L_d">
+               <property name="suffix">
+                <string>°</string>
+               </property>
                <property name="minimum">
                 <number>-179</number>
                </property>
@@ -123,6 +138,9 @@
              </item>
              <item>
               <widget class="QSpinBox" name="L_m">
+               <property name="suffix">
+                <string>′</string>
+               </property>
                <property name="maximum">
                 <number>59</number>
                </property>
@@ -130,6 +148,9 @@
              </item>
              <item>
               <widget class="QDoubleSpinBox" name="L_s">
+               <property name="suffix">
+                <string>″</string>
+               </property>
                <property name="decimals">
                 <number>4</number>
                </property>
@@ -169,6 +190,9 @@
             <layout class="QHBoxLayout" name="horizontalLayout_4">
              <item>
               <widget class="QSpinBox" name="L0_d">
+               <property name="suffix">
+                <string>°</string>
+               </property>
                <property name="minimum">
                 <number>-179</number>
                </property>
@@ -179,6 +203,9 @@
              </item>
              <item>
               <widget class="QSpinBox" name="L0_m">
+               <property name="suffix">
+                <string>′</string>
+               </property>
                <property name="maximum">
                 <number>59</number>
                </property>
@@ -186,6 +213,12 @@
              </item>
              <item>
               <widget class="QDoubleSpinBox" name="L0_s">
+               <property name="prefix">
+                <string/>
+               </property>
+               <property name="suffix">
+                <string>″</string>
+               </property>
                <property name="decimals">
                 <number>4</number>
                </property>
@@ -254,7 +287,7 @@
            <bool>true</bool>
           </property>
           <property name="checked">
-           <bool>false</bool>
+           <bool>true</bool>
           </property>
           <property name="autoRepeat">
            <bool>false</bool>
@@ -299,7 +332,7 @@
            </size>
           </property>
           <property name="text">
-           <string>正算</string>
+           <string>正算(&amp;Z)</string>
           </property>
          </widget>
         </item>
@@ -312,7 +345,7 @@
            </size>
           </property>
           <property name="text">
-           <string>清空</string>
+           <string>清空(&amp;C)</string>
           </property>
          </widget>
         </item>
@@ -325,7 +358,7 @@
            </size>
           </property>
           <property name="text">
-           <string>反算</string>
+           <string>反算(&amp;F)</string>
           </property>
          </widget>
         </item>
@@ -365,7 +398,7 @@
         <item>
          <widget class="QGroupBox" name="groupBox_4">
           <property name="title">
-           <string>大地坐标X</string>
+           <string>大地坐标X（m）</string>
           </property>
           <layout class="QGridLayout" name="gridLayout_4">
            <item row="0" column="0">
@@ -380,7 +413,10 @@
               <string/>
              </property>
              <property name="text">
-              <string/>
+              <string>0.0000</string>
+             </property>
+             <property name="frame">
+              <bool>true</bool>
              </property>
              <property name="placeholderText">
               <string/>
@@ -409,7 +445,7 @@
         <item>
          <widget class="QGroupBox" name="groupBox_5">
           <property name="title">
-           <string>大地坐标Y</string>
+           <string>大地坐标Y（m）</string>
           </property>
           <layout class="QGridLayout" name="gridLayout_5">
            <item row="0" column="0">
@@ -419,6 +455,9 @@
                <horstretch>0</horstretch>
                <verstretch>0</verstretch>
               </sizepolicy>
+             </property>
+             <property name="text">
+              <string>0.0000</string>
              </property>
             </widget>
            </item>
@@ -497,182 +536,5 @@
   </widget>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>Btn_Clear</sender>
-   <signal>clicked()</signal>
-   <receiver>B_d</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>355</x>
-     <y>369</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>54</x>
-     <y>165</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>Btn_Clear</sender>
-   <signal>clicked()</signal>
-   <receiver>B_m</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>359</x>
-     <y>375</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>120</x>
-     <y>166</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>Btn_Clear</sender>
-   <signal>clicked()</signal>
-   <receiver>B_s</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>337</x>
-     <y>373</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>197</x>
-     <y>165</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>Btn_Clear</sender>
-   <signal>clicked()</signal>
-   <receiver>L_d</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>349</x>
-     <y>369</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>69</x>
-     <y>323</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>Btn_Clear</sender>
-   <signal>clicked()</signal>
-   <receiver>L_m</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>344</x>
-     <y>371</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>133</x>
-     <y>318</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>Btn_Clear</sender>
-   <signal>clicked()</signal>
-   <receiver>L_s</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>325</x>
-     <y>374</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>207</x>
-     <y>323</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>Btn_Clear</sender>
-   <signal>clicked()</signal>
-   <receiver>L0_d</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>341</x>
-     <y>374</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>55</x>
-     <y>462</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>Btn_Clear</sender>
-   <signal>clicked()</signal>
-   <receiver>L0_m</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>345</x>
-     <y>375</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>123</x>
-     <y>462</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>Btn_Clear</sender>
-   <signal>clicked()</signal>
-   <receiver>L0_s</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>350</x>
-     <y>381</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>191</x>
-     <y>467</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>Btn_Clear</sender>
-   <signal>clicked()</signal>
-   <receiver>Coo_X</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>482</x>
-     <y>371</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>582</x>
-     <y>169</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>Btn_Clear</sender>
-   <signal>clicked()</signal>
-   <receiver>Coo_Y</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>490</x>
-     <y>377</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>617</x>
-     <y>323</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>
