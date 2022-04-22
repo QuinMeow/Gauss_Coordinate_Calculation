@@ -57,7 +57,7 @@ void MainWindow::on_Btn_PosCal_clicked()
         x = 6367558.4969*B_r-(a0-(0.5+(a4+a6*pow(l,2))*pow(l,2))*pow(l,2)*N)*sin(B_r)*cos(B_r);
         y = (1+(a3+a5*pow(l,2))*pow(l,2))*l*N*cos(B_r);
     }
-    else if(ui->radBtn_IAG->isChecked())
+    else if(ui->radBtn_IAG->isChecked()) //1975国际椭球
     {
         N = 6399596.652 - (21565.045-(108.996-0.603*pow(cos(B_r),2))*pow(cos(B_r),2))*pow(cos(B_r),2);
         a0 = 32144.5189 - (135.3646-(0.7034-0.0041*pow(cos(B_r),2))*pow(cos(B_r),2))*pow(cos(B_r),2);
@@ -93,5 +93,24 @@ void MainWindow::on_Btn_Clear_clicked()
 
     ui->Coo_X->setText("0.0000");
     ui->Coo_Y->setText("0.0000");
+}
+
+
+void MainWindow::on_Btn_CouCal_clicked()
+{
+    x = ui->Coo_X->text().toDouble();
+    y = ui->Coo_Y->text().toDouble();
+
+    if(ui->radBtn_T->isChecked())
+    {
+        Beta = x/6367558.4969*rho2;
+        Bf = Beta+(50332746+(293622+(2350+22*pow(cos(Beta),2))*pow(cos(Beta),2))*pow(cos(Beta),2))*1e-10*sin(Beta)*cos(Beta)*rho2;
+        Nf = 6399698.902 -(21562.267-(108.973-0.612*pow(cos(Bf),2))*pow(cos(Bf),2))*pow(cos(Bf),2);
+        Z = y/(Nf*cos(Bf));
+        b2 = (0.5+0.003369*pow(cos(Bf),2))*sin(Bf)*cos(Bf);
+        b3 = 0.333333-(0.166667-0.001123*pow(cos(Bf),2))*pow(cos(Bf),2);
+        b4 = 0.25+(0.16161+0.00562*pow(cos(Bf),2))*pow(cos(Bf),2);
+        b5 = 0.2-(0.1667-0.0088*pow(cos(Bf),2))*pow(cos(Bf),2);
+    }
 }
 
