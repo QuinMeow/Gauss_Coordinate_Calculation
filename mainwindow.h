@@ -25,6 +25,18 @@ private slots:
 
     void on_Btn_CouCal_clicked();
 
+    void BSpin_ValChange();
+
+    void LSpin_ValChange();
+
+    void L0Spin_ValChange();
+
+    void on_B_line_editingFinished();
+
+    void on_L_line_editingFinished();
+
+    void on_L0_line_editingFinished();
+
 private:
     Ui::MainWindow *ui;
     const double rho2 = 206264.806247;
@@ -34,7 +46,7 @@ private:
     //正算参数
     double l,N,a0,a4,a6,a3,a5;
     //反算参数
-    double Bf,Beta,Z,Nf,b2,b3,b4,b5;
+    double Bf,Bf_r,Beta,Beta_r,Z,Nf,b2,b3,b4,b5;
 
 };
 #endif // MAINWINDOW_H

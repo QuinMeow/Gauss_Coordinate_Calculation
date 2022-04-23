@@ -50,10 +50,17 @@
         <item>
          <widget class="QGroupBox" name="B_Box">
           <property name="title">
-           <string>大地纬度B（度°分′秒″）：</string>
+           <string>大地纬度B</string>
           </property>
-          <layout class="QGridLayout" name="gridLayout">
-           <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>度°分′秒″：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
             <layout class="QHBoxLayout" name="horizontalLayout_2">
              <item>
               <widget class="QSpinBox" name="B_d">
@@ -96,6 +103,29 @@
              </item>
             </layout>
            </item>
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>度：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="B_line">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>0.00000000</string>
+             </property>
+             <property name="clearButtonEnabled">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
           </layout>
          </widget>
         </item>
@@ -118,10 +148,17 @@
         <item>
          <widget class="QGroupBox" name="L_Box">
           <property name="title">
-           <string>大地经度L（度°分′秒″）：</string>
+           <string>大地经度L</string>
           </property>
-          <layout class="QGridLayout" name="gridLayout_2">
-           <item row="0" column="0">
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>度°分′秒″：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
             <layout class="QHBoxLayout" name="horizontalLayout_3">
              <item>
               <widget class="QSpinBox" name="L_d">
@@ -161,6 +198,29 @@
              </item>
             </layout>
            </item>
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>度：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="L_line">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>0.000000</string>
+             </property>
+             <property name="clearButtonEnabled">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
           </layout>
          </widget>
         </item>
@@ -180,13 +240,30 @@
           </property>
          </spacer>
         </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
         <item>
          <widget class="QGroupBox" name="L0_Box">
           <property name="title">
            <string>轴子午线经度L0（度°分′秒″）</string>
           </property>
           <layout class="QGridLayout" name="gridLayout_3">
-           <item row="0" column="0">
+           <item row="1" column="0">
             <layout class="QHBoxLayout" name="horizontalLayout_4">
              <item>
               <widget class="QSpinBox" name="L0_d">
@@ -229,76 +306,37 @@
              </item>
             </layout>
            </item>
+           <item row="3" column="0">
+            <widget class="QLineEdit" name="L0_line">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>0.000000</string>
+             </property>
+             <property name="clearButtonEnabled">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>度°分′秒″：</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>度：</string>
+             </property>
+            </widget>
+           </item>
           </layout>
-         </widget>
-        </item>
-        <item>
-         <spacer name="verticalSpacer_11">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeType">
-           <enum>QSizePolicy::Preferred</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QVBoxLayout" name="verticalLayout_2">
-        <item>
-         <spacer name="verticalSpacer_3">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item>
-         <widget class="QLabel" name="label">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="text">
-           <string>椭球参数：</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QRadioButton" name="radBtn_T">
-          <property name="text">
-           <string>克拉索夫斯基椭球</string>
-          </property>
-          <property name="checkable">
-           <bool>true</bool>
-          </property>
-          <property name="checked">
-           <bool>true</bool>
-          </property>
-          <property name="autoRepeat">
-           <bool>false</bool>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QRadioButton" name="radBtn_IAG">
-          <property name="text">
-           <string>1975国际椭球</string>
-          </property>
          </widget>
         </item>
         <item>
@@ -308,6 +346,51 @@
           </property>
           <property name="sizeType">
            <enum>QSizePolicy::Preferred</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>椭球参数</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QRadioButton" name="radBtn_T">
+             <property name="text">
+              <string>克拉索夫斯基椭球</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+             <property name="autoRepeat">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="radBtn_IAG">
+             <property name="text">
+              <string>1975国际椭球</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
@@ -332,7 +415,7 @@
            </size>
           </property>
           <property name="text">
-           <string>正算(&amp;Z)</string>
+           <string>---正算(&amp;Z)--&gt;</string>
           </property>
          </widget>
         </item>
@@ -358,14 +441,17 @@
            </size>
           </property>
           <property name="text">
-           <string>反算(&amp;F)</string>
+           <string>&lt;--反算(&amp;F)---</string>
           </property>
          </widget>
         </item>
         <item>
-         <spacer name="verticalSpacer_2">
+         <spacer name="verticalSpacer_11">
           <property name="orientation">
            <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Preferred</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
@@ -421,6 +507,9 @@
              <property name="placeholderText">
               <string/>
              </property>
+             <property name="clearButtonEnabled">
+              <bool>true</bool>
+             </property>
             </widget>
            </item>
           </layout>
@@ -459,6 +548,9 @@
              <property name="text">
               <string>0.0000</string>
              </property>
+             <property name="clearButtonEnabled">
+              <bool>true</bool>
+             </property>
             </widget>
            </item>
           </layout>
@@ -466,44 +558,6 @@
         </item>
         <item>
          <spacer name="verticalSpacer_6">
-          <property name="orientation">
-           <enum>Qt::Vertical</enum>
-          </property>
-          <property name="sizeType">
-           <enum>QSizePolicy::Preferred</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>20</width>
-            <height>40</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item>
-         <widget class="QGroupBox" name="groupBox_6">
-          <property name="title">
-           <string>R</string>
-          </property>
-          <layout class="QGridLayout" name="gridLayout_6">
-           <item row="0" column="0">
-            <layout class="QHBoxLayout" name="horizontalLayout">
-             <item>
-              <widget class="QSpinBox" name="R_d"/>
-             </item>
-             <item>
-              <widget class="QSpinBox" name="R_m"/>
-             </item>
-             <item>
-              <widget class="QDoubleSpinBox" name="R_s"/>
-             </item>
-            </layout>
-           </item>
-          </layout>
-         </widget>
-        </item>
-        <item>
-         <spacer name="verticalSpacer_7">
           <property name="orientation">
            <enum>Qt::Vertical</enum>
           </property>
