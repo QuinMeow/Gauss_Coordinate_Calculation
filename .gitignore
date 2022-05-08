@@ -70,4 +70,6 @@ Thumbs.db
 # --------
 *.dll
 *.exe
+#Qt
+.qtc_clangd
 

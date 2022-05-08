@@ -10,8 +10,8 @@ MainWindow::MainWindow(QWidget *parent)
     QDoubleValidator *X_Validator = new QDoubleValidator(0,10000000,4);
     QDoubleValidator *Y_Validator = new QDoubleValidator(-500000,500000,4);
     QDoubleValidator *B_Validator = new QDoubleValidator(-90,90,6);
-    QDoubleValidator *L_Validator = new QDoubleValidator(-90,90,6);
-    QDoubleValidator *L0_Validator = new QDoubleValidator(-90,90,6);
+    QDoubleValidator *L_Validator = new QDoubleValidator(-180,180,6);
+    QDoubleValidator *L0_Validator = new QDoubleValidator(-180,180,6);
 
     ui->Coo_X->setValidator(X_Validator);
     ui->Coo_Y->setValidator(Y_Validator);
